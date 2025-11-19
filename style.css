@@ -1,5 +1,5 @@
 .contacts{
-    background-image: url("contacts.jpg");
+    background-image: url("asset/contacts.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
@@ -18,7 +18,7 @@
 }
 
 .aboutUs{
-    background-image: url("aboutUs.jpg");
+    background-image: url("asset/aboutUs.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
@@ -29,20 +29,88 @@
 }
 
 .menu{
-    background-image: url("download.jpg");
+    background-image: url("asset/download.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
     background-position-y: center;
     background-attachment: fixed;
+    display: block;
     color: white;
-    
-} 
-div{
     text-align: center;
-    color:#543307;
+} 
+.About_Us{
+    color: wheat;
+}
+.Contacts{
+    color: wheat;
 }
 .img{
     margin-left: 50px;
-    
+    float: left;
+    display: block;
+}
+.img1{
+   float: right;
+   margin-right: 50px;
+   display: block;
+}
+
+.img2{
+    margin-left: 50px;
+    margin-top: 375px;
+    float: bottom;
+    display: block;
+}
+
+.img3{
+    margin-right: 50px;
+    margin-top: -195px;
+    float: right;
+    display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+div.gallery-item {
+  margin: 5px;
+  border: 1px solid #ccc;
+  width: calc(25% - 20px);
+}
+
+div.gallery-item:hover {
+  border: 1px solid #777;
+}
+
+/*div.gallery-item img {
+  width: 100%;
+  height: auto;
+}*/
+
+div.gallery-item div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 310px) {
+  div.gallery-item {
+    width: calc(50% - 20px);
+  }
+}
+
+@media only screen and (max-width: 310px) {
+  div.gallery-item {
+    width: calc(100% - 20px);
+  }
+}
+.gallery{
+    color: white;
 }
